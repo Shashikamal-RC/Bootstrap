@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA--Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
+
+    <style>
+      .green{
+        background-color: red;
+        height: 100vh;
+      }
+
+      <!-- media query
+      it is like if condition, when max-with is 575px apply this rule  -->
+
+  <!-- xs -->
+      @media (max-width: 575px){
+        .green{
+          background-color: blue;
+          height: 100vh;
+        }
+      }
+
+<!-- sm -->
+      @media (min-width: 576px) and (max-width: 767px){
+        .green{
+          background-color: green;
+          height: 100vh;
+        }
+      }
+<!-- md -->
+      @media (min-width: 768px) and (max-width: 991){
+        .green{
+          background-color: black;
+          height: 100vh;
+        }
+      }
+<!-- lg -->
+      @media (min-width: 991px) and (max-width: 1199px){
+        .green{
+          background-color: orange;
+          height: 100vh;
+        }
+      }
+<!-- xl -->
+      @media (min-width: 1200px){
+        .green{
+          background-color: purple;
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <button class="btn btn-info btn-lg">Click here </button>
+    <!-- <script src="JS/bootstrap.min.js"></script> -->
+
+
+<!-- container class have some padding where as container-fluid class will fill complete screen -->
+  <div class="container-fluid green">
+    hello world
+  </div>
+
+  <!-- media queries :- simple CSS rules which are activated only wher certain conditions met -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

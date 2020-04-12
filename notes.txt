@@ -1,0 +1,10 @@
+SETUP-1
+
+- getbootstrap.com
+- download bootstrap (.zip)
+- extract file
+- copy bootstrap.min.css and bootstrap.min.js  to you project folder and add it your html file
+
+Bootstrap CDN way
+
+  - copr css and js links copr it to yout html file

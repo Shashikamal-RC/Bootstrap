@@ -1,0 +1,20 @@
+/* to fill up the background with iamge */
+body{
+  background: url(eggs1280.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.hero{
+  color: #fff;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 75px;
+  letter-spacing: -0.05em;
+  line-height: 1.2em;
+  font-family: 'Revalia', cursive; // google font called here
+}
+
+.ima{
+  height: 100px;
+  width: 200px;
+}

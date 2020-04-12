@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta http-equiv="X-UA--Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <style>
+    .con{
+      background-color: #a1a1a1;
+      height: 100vh;
+    }
+    .gray{
+      background-color: orange;
+      height: 200px;
+    }
+    .red{
+      background-color: red;
+      height: 200px;
+    }</style>
+
+  </head>
+  <body>
+
+    <!-- set up different layouts for different screen sizes (mobile desktop) -->
+
+
+    <div class="container con">
+      <div class="row">
+        <!-- col-sm-2 will take half  of the screen-->
+        <div class="col gray">
+          column2
+        </div>
+        <div class="col red">
+          column2
+        </div>
+        <div class="col gray">
+          column3
+        </div>
+      </div>
+      <div class="row">break</div>
+      <!-- justify-content-md-center = itis flwx box property  (md - medium break point)-->
+      <div class="row justify-content-md-center">
+        <!-- col-sm-2 will take half  of the screen-->
+        <div class="col gray">
+          column2
+        </div>
+        <!-- col-md-auto = based on content the size of the grid size will be specified -->
+        <div class="col  red">
+          column2
+        </div>
+        <div class="col gray">
+          column3
+        </div>
+      </div>
+      <div class="row">break</div>
+      <!-- justify-content-md-center = itis flwx box property  (md - medium break point)-->
+
+
+      <div class="row ">
+        <!-- col-sm-2 will take half  of the screen-->
+        <div class="col gray">
+          column2
+        </div>
+        <!-- col-md-auto = based on content the size of the grid size will be specified -->
+        <div class="col red">
+          column2
+        </div>
+
+<!-- adding break point , to separate tewo items in one row and other two in other row  -->
+<!--  this is not recommended, instrad we can div another row with col-sm-6 for each column  -->
+        <div class="w-100"></div>
+
+        <div class="col gray">
+          column3
+        </div>
+        <div class="col red">
+          column4
+        </div>
+      </div>
+
+  <!-- Here we are trying, cl1 to take half part in bigger screen and other two to share remaining half
+      But, in smaller screenall three should have equal size
+    For smaller screen, col1 half and reamining half is shared-->
+      <div class="row ">
+        <div class="col-lg-6 col-md-4 col-sm-6 gray">
+          column2
+        </div>
+         <div class="col-lg-3 col-md-4 col-sm-3 red">
+          column2
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-3 gray">
+          column3
+        </div>
+      </div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
